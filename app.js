@@ -9,7 +9,7 @@ cxt.strokeText("Otro texto",50,100); // Texto contornos
 
 
 
-var c = document.getElementById("micanvas");
+var c = document.getElementById("miscanvas");
 var cxtt = c.getContext("2d");
  
 var imagen = new Image(); // Crea una imagen para luego poder mostrarla
@@ -26,3 +26,57 @@ cxtt.drawImage(img, 50, 50, 200, 140); // Dibuja la imagen en la posicion indica
 var patron = context.createPattern(imagen, repeat-x);
 cxtt.fillStyle = patron;
 cxtt.fillRect(10,10,200,200);
+
+
+
+
+
+var c = document.getElementById("micanvas");
+var cxxt = c.getContext("2d");
+
+// Dijujamos un castillo
+cxxt.beginPath();
+cxxt.moveTo(30,30);
+cxxt.lineTo(40,30);
+cxxt.lineTo(40,40);
+cxxt.lineTo(50,40);
+cxxt.lineTo(50,30);
+cxxt.lineTo(60,30);
+cxxt.lineTo(60,40);
+cxxt.lineTo(70,40);
+cxxt.lineTo(70,30);
+cxxt.lineTo(80,30);
+cxxt.lineTo(80,40);
+cxxt.lineTo(90,40);
+cxxt.lineTo(90,30);
+cxxt.lineTo(100,30);
+cxxt.lineTo(100,90);
+cxxt.lineTo(30,90);
+cxxt.closePath(); // Cierra la figura como si usasemos cxxt.lineTo(30,50);
+cxxt.stroke();
+
+// Dibujamos el palo de la bandera
+cxxt.strokeStyle = "brown";
+cxxt.beginPath();
+cxxt.moveTo(55,30);
+cxxt.lineTo(55,10);
+cxxt.stroke();
+
+// Dibujamos una bandera
+cxxt.fillStyle = "green";
+cxxt.beginPath();
+cxxt.moveTo(55,10);
+cxxt.lineTo(65,15);
+cxxt.lineTo(55,20);
+cxxt.fill();  // Cierra la figura y rellena
+
+// Dibujamos la puerta
+cxxt.fillStyle = "brown";
+cxxt.beginPath();
+cxxt.moveTo(55,90);
+cxxt.lineTo(55,75);
+cxxt.lineTo(65,70);
+cxxt.lineTo(75,75);
+cxxt.lineTo(75,90);
+cxxt.closePath(); // Cierra la figura
+cxxt.fill(); // Y la rellena

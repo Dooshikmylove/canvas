@@ -34,3 +34,11 @@ a:hover{
     color: white;
     transform: scale(1.2);
 }
+
+body {
+    background: rgb(29, 31, 32); 
+  }
+  #lineas2 {
+    margin: 20px auto;
+    display: block;
+  }
