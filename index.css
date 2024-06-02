@@ -1,0 +1,36 @@
+*{
+    margin: 0px;
+    padding: 0px;
+box-sizing: border-box; 
+}
+
+#index{
+text-align:center;
+color: white;
+background: linear-gradient(90deg, rgb(14, 5, 79) 1%,  rgb(0, 0, 0) 90%);
+}
+
+h1{
+    text-shadow: 0 0 10px black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    width: 400px;
+    height: 50px;
+    margin: 10px auto;
+    background: blue;
+    border-radius: 5px ;
+    border: 1px solid white;
+}
+
+a:hover{
+    box-shadow: 0 0 5px darkblue;
+    border: 1px solid white;
+    background: darkblue;
+    color: white;
+    transform: scale(1.2);
+}
