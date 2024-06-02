@@ -46,6 +46,7 @@ function drawPaddle() {
     ctx.closePath();
 }
 
+
 function draw() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     drawBall();
@@ -62,8 +63,7 @@ function draw() {
             dy = -dy;
         }
         else {
-            alert("GAME OVER");
-            document.location.reload();
+
         }
     }
     
